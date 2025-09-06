@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.name-title{
+    font-weight: bold;
+    font-size: 5em;
+}
+.pre-title{
+    margin: 0;
+    font-size: 1.6em;
+    font-style: italic;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+
+}
+.normal-background{
+    background: rgb(255, 255, 251);
+}
+.swipe-up-box{
+    background: rgb(255, 255, 251);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.fake-background{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.name-section{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.name-desc{
+    font-style: italic;
+    font-size: 1.1em;
+}
+.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+.media-icon{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 2%;
+    right: 1%;
+    border-radius: 50%;
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media-icon img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+.buttons-container{
+    display: flex;
+    font-family: "Epunda Slab", serif;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    overflow: visible;
+}
+.resume-button{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 18px;
+    font-family: "Epunda Slab", serif;
+    font-weight: 600;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid rgb(63, 121, 231);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.resume-button:hover{
+    transform: translateY(-4px); 
+}
+.contact-button{
+    background-color: #F4708F;
+    color: white;
+    font-size: 18px;
+    font-family: "Epunda Slab", serif;
+    font-weight: 600;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #db4f70;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+.contact-button:hover{
+    transform: translateY(-4px); 
+}
+.media-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    border-bottom: #a0a0a0;
+}
+.top-header{
+    display: flex;
+    flex-direction: column;
+}
+.top-footer{
+    margin-top: 50px;
+    max-width: 300px;
+}
+.tech-scroll{
+    display: flex;
+    width: max-content;
+}
+.logo{
+    flex: 0 0 auto;
+    margin: 0 20px;
+    font-size: 24px;
+    white-space: nowrap;
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+}
+.scroll-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0));
+}
+.grid-pattern{
+    width: 100%;
+    height: 1200px;
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.05 ) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 100px 100px;
+}
+.projects-section-container{
+    margin-top: 50px;
+}
+.project-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.projects-section-container h1{
+    font-size: 5em;
+    color: cornflowerblue;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.project-type button{
+    color: white;
+    font-size: 18px;
+    font-family: "Jockey One", sans-serif;
+    font-weight: 300;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, background-color 0.3s;
+
+}
+.project-type button:hover{
+    transform: scale(1.1);
+}
+.pink{
+    border: 3px solid #db4f70;
+    background-color: #F4708F;
+    transform: scale(1.2);
+}
+.gray{
+    background-color: rgba(76, 76, 76, 0.535);
+    border: 3px solid #737373;
+}
+.hide-2{
+    display: none !important;
+}
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 150px;
+}
+.tech-info{
+    font-style: italic;
+    margin-bottom: 15px;
+}
