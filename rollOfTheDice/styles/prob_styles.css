@@ -1,0 +1,270 @@
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+header{
+    height: 85px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px auto auto auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 50px;
+    grid-gap: 50px;
+    overflow: hidden;
+}
+.progressBar{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    border-radius: 50px;
+    margin-top: -5px;
+}
+.filled{
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(1, 163, 1), rgb(0, 95, 0));
+}
+.addBackground{
+    background-color: rgb(9, 26, 37);
+    
+}
+button{
+    background-color: transparent;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.678);
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+a:visited{
+    text-decoration: underline;
+}
+.logo{
+    width: 50px;
+}
+body{
+    background-color: rgb(26, 44, 56);
+    color: white;
+}
+.hitButton{
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 5px rgb(210, 27, 27) solid;
+    color: white;
+    background-color: rgba(210, 27, 27, 0.178);
+}
+.standButton{
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 5px rgb(27, 210, 27) solid;
+    color: white;
+    background-color: rgba(27, 210, 27, 0.179);
+}
+.restartButton{
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 5px rgb(97, 142, 206) solid;
+    color: white;
+    background-color: rgba(251, 251, 251, 0.1);
+    display: none;
+}
+.content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titlePart{
+    text-align: center;
+    margin-top: 50px;
+}
+.date{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: rgb(41, 237, 41);
+}
+.articleTitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.blackjackInfo{
+    max-width: 1200px;
+    padding: 20px 50px;
+    width: 100%;
+    background-color: rgb(37, 51, 60);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+ul{
+    margin: 10px auto;
+}
+.articleContent{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.scenarios{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-gap: 60px;
+}
+.subtitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.scenarioCard{
+    text-align: center;
+    width: 500px;
+}
+.scenarioCard > img{
+    width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.scenarioTitle{
+    margin: 30px auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: center;
+}
+.scenarioCard > h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin: 20px;
+}
+.scenarioCard > p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 20px;
+    margin: 10px;
+}
+#condition{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.houseCards{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.playerCards{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.blackjack{
+    text-align: center;
+    margin-top: 100px;
+}
+.blackjackButtons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 15px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.blackjackButtons > button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.blackjackButtons > button{
+    transition: 0.5s;
+}
+.scores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media screen and (max-width: 1330px) {
+    .blackjackInfo{
+        max-width: 800px;
+    }
+    .scenarios{
+        grid-template-columns: auto;
+    }
+} 
+@media screen and (max-width: 910px) {
+    .blackjackInfo{
+        max-width: 600px;
+    }
+    .articleImg > img {
+        width: 500px;
+    }
+} 
+@media screen and (max-width: 910px) {
+    .blackjackInfo{
+        max-width: 400px;
+    }
+    .scenarioCard > img{
+        width: 400px;
+    }
+    .scenarioCard > p{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .houseCards{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    .playerCards{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}

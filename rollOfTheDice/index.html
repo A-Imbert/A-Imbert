@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="imgs/poker_chip_icon.png">
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="animation" id="ani">
+            <div class="animationContent">
+                <img src="imgs/dicewhite.png" alt="logowhite" class="animationLogo">
+                <h1 class="animationText">Roll of the Dice</h1>
+            </div>
+        </div>
+        <div class="video">
+            <header>
+                <nav>
+                    <button>
+                        <a href="#articles">
+                            Articles
+                        </a>
+                    </button>
+                    <a href="index.html">
+                        <img src="imgs/dicewhite.png" alt="logo" class="logo">
+                    </a>
+                    <button>
+                        <a href="credits.html">
+                            Credits
+                        </a>
+                    </button>
+                </nav>
+            </header>
+            <video autoplay loop muted plays-inline class="backgroundVid">
+                <source src="videos/casino_montage.mp4" type="video/mp4">
+            </video>
+            <div class="videoContent">
+                <h1 class="hide2" id = "title">Roll of the Dice</h1>
+                <p class="hide2" id="introtext">
+                    Welcome to our digital magazine, where we explore the origins, evolution, and probabilities of gambling. 
+                </p>
+                <a class="hide2" id="button" href="#learnMore">Learn More</a>
+            </div>
+        </div>
+        <div class="contentMain">
+            <div class="display" id="learnMore">
+                <div class="textRight">
+                    <h2 class="displayTitle">Roll of the Dice</h2>
+                    <p class="displaySubtext">
+                        
+                        Welcome to our digital magazine, where we delve into the captivating world of gambling. From its ancient origins to its modern-day manifestations, we explore the fascinating evolution of this timeless pastime.
+                        <br> <br> Through insightful articles, we illuminate the intricacies of probability in various games and shed light on the historical exploits of cheats and hustlers. With gambling on the rise in recent years and projections pointing to continued growth, our magazine aims to educate and inform readers about the diverse facets of this dynamic industry.
+                    </p>
+                </div>
+                <div class="galleryContainer">
+                    <div class="gallery">
+                        <img src="imgs/las_vegas.jpg" alt="las_vegas" id="image1">
+                        <img src="imgs/slots.jpg" alt="slot machines" id="image2">
+                        <img src="imgs/cards_in_casino.jpg" alt="cards" id="image3">
+                    </div>
+                    <div class="slider">
+                        <a href="#image1"></a>
+                        <a href="#image2"></a>
+                        <a href="#image3"></a>
+                    </div>
+                </div>
+            </div>
+            <h2 id="articles">Articles</h2>
+            <div class="articles">
+                <a class="aArticle" href="history.html">
+                    <div class="articleCard img1">
+                        <div class="articleText">
+                            <div class="box">ARTICLE</div>
+                            <h3>History of Gambling</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="aArticle" href="prob.html">
+                    <div class="articleCard img2">
+                        <div class="articleText">
+                            <div class="box">ARTICLE</div>
+                            <h3>Blackjack Probability</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="aArticle" href="b&c.html">
+                    <div class="articleCard img3">
+                        <div class="articleText">
+                            <div class="box">ARTICLE</div>
+                            <h3>Bugs & Cheats</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="aArticle" href="psych.html">
+                    <div class="articleCard img4">
+                        <div class="articleText">
+                            <div class="box">ARTICLE</div>
+                            <h3>Psychology of Gambling</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+
+    <script src="scripts/script_index.js"></script>
+    </body>
+</html>

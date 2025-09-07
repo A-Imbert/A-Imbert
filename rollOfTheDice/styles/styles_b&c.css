@@ -1,0 +1,354 @@
+/* setup */
+body {
+    background-color: rgb(15,33,46);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.678);
+}
+
+/*nav bar*/
+header{
+    height: 85px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px auto auto auto;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    background-color: transparent;
+    transition: 1s;
+    border-radius: 50px;
+    grid-gap: 50px;
+    overflow: hidden;
+    z-index: 100;
+}
+.progressBar{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    border-radius: 50px;
+    margin-top: -5px;
+}
+.titleH1{
+    font-weight: 600;
+}
+.filled{
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(1, 163, 1), rgb(0, 95, 0));
+}
+.addBackground{
+    background-color: rgb(9, 26, 37);
+    
+}
+button{
+    background-color: transparent;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.678);
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+a:visited{
+    text-decoration: underline;
+}
+.logo{
+    width: 50px;
+}
+
+/*main content*/
+.contentMain {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.displayTitle, #title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.displaySubtext, #introtext {
+    line-height: 1.5;
+}
+
+/*responsive design*/
+@media (max-width: 768px) {
+    .contentMain, nav {
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .displayTitle, #title {
+        font-size: larger;
+    }
+}
+
+
+.cheatSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.cheatImage img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.cheatDescription h2 {
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cheatSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cheatImage img {
+        margin-bottom:1rem;
+    }
+
+    .cheatDescription h2{
+        margin-top:1rem;
+    }
+}
+
+.page-header {
+    background-color: #1F1F1F;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.intro-section {
+    background: url('/path/to/header-background.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 100px;
+}
+
+.cheat-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cheat-profile {
+    background-color: rgb(26, 44, 56);
+    border-radius: 8px;
+    margin: 20px;
+    width: calc(33.333% - 40px);
+    text-align: center;
+    padding: 20px;
+}
+
+.cheat-profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer-section {
+    background-color: rgb(26, 44, 56);
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .cheat-section {
+        flex-direction: column;
+    }
+
+    .cheat-profile {
+        width: auto;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .cheat-profile {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav button, nav a {
+        margin: 10px 0;
+    }
+}
+
+.cheat-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding: 20px;
+}
+
+.cheat-profile {
+    background-color: rgb(26, 44, 56);
+    border-radius: 8px;
+    margin: 20px; 
+    width: calc(50% - 40px); 
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .cheat-profile {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .cheat-profile {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .cheat-profile {
+        width: calc(100% - 20px); 
+    }
+}
+
+
+/* Quiz Section Styling */
+#quiz-section {
+    background-color: #1c2b36;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#quiz-section h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#quiz-form label, #quiz-form input {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#quiz-form label {
+    color: #9dacb2;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#quiz-form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #253b48;
+    color: #fff;
+}
+
+#quiz-form button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#quiz-form button:hover {
+    background-color: #66bb6a;
+}
+
+#quiz-result {
+    color: #f44336;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem; 
+}
+
+.intro-textbox {
+    background-color: rgb(26, 44, 56);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    color: white;
+}
+
+.cheat-profile img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cheat-profile h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 10px; 
+}
+

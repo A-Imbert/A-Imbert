@@ -1,0 +1,133 @@
+.lato {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(15, 33, 46);
+    line-height: 1.25;
+}
+
+.large {
+    font-size: 200%;
+}
+
+.medium {
+    font-size: 125%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.grid-credits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "cardA cardB"
+    "cardC cardD"
+    ;
+    margin: 100px 100px;
+    grid-gap: 50px;
+}
+
+.cardimg {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.cardtxt {
+    padding: 20px 0px 20px 220px;
+}
+
+.cardimg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardA {
+    background-color: rgb(26, 44, 56);
+    grid-area: cardA;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 20px 20px rgb(10, 24, 33);
+}
+
+.cardB {
+    background-color: rgb(26, 44, 56);
+    grid-area: cardB;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 20px 20px rgb(10, 24, 33);
+}
+
+.cardC {
+    background-color: rgb(26, 44, 56);
+    grid-area: cardC;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 20px 20px rgb(10, 24, 33);
+}
+
+.cardD {
+    background-color: rgb(26, 44, 56);
+    grid-area: cardD;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 20px 20px rgb(10, 24, 33);
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.special{
+    margin-left: 50px;
+}
+@media(max-width: 768px) {
+    .grid-credits {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "cardA"
+        "cardB"
+        "cardC"
+        "cardD"
+        ;
+        margin: 100px 100px;
+        grid-gap: 50px;
+    }
+    .cardimg {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        float: none;
+    }
+    .cardtxt {
+        padding: 20px 0px 20px 20px;
+    }
+}

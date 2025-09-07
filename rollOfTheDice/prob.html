@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/prob_styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="imgs/blackjack_favicon.jpg">
+        <title>Probability of Blackjack</title>
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <button>
+                    <a href="index.html#articles">
+                        Articles
+                    </a>
+                </button>
+                <a href="index.html">
+                    <img src="imgs/dicewhite.png" alt="logo" class="logo">
+                </a>
+                <button>
+                    <a href="credits.html">
+                        Credits
+                    </a>
+                </button>
+                <div class="progressBar">
+                    <div class="filled"></div>
+                </div>
+            </nav>
+
+        </header>
+        <div class="content">
+            <div class="titlePart">
+                <p class="date">3-30-2023</p>
+                <h1 class="articleTitle">Blackjack Probability</h1>
+            </div>
+            <div class="articleImg">
+                <img src="imgs/math_of_gambling.jpg" alt="" class="testing">
+            </div>
+            <div class="articleContent">
+                <div class="blackjackInfo">
+                    <h2 class="subtitle">
+                        How to play?
+                    </h2>
+                    <p>
+                        In any game of classic Blackjack, Live Dealer Blackjack or online Blackjack, the underlying goal of the player is to come up with a hand that is higher than the dealer's hand and has a total sum that is close to, but not higher than 21.
+                    </p>
+                    <br>
+                    <p>
+                        Classic or American Blackjack is the game you’ll find in most casinos. You play this variation using a deck of 52 cards. Here, the blackjack win percentage or probability sits at 42.22%, while the chance of getting 21 is 4.75%.
+                    </p>
+                    <h2 class="scenarioTitle">House Edge</h2>
+                    <p>
+                        The house edge is also known as the casino advantage. And it's something that exists on every table game, lotto, or slot in a casino online or on land. House edge tells you:
+                        <ul>
+                            <li>Payouts: How much each game pays out on average over its lifespan.</li>
+                            <li>Best returns: Which games offer players the best returns on their bets.</li>
+                        </ul>
+                        In blackjack (Assuming the player follows basic strategy) the house edge is anywhere between 0.5% to 1%. Meaning for every 100$ spent at the blackjack table the casino expects to keep 50c - 1$. This is one of the reasons why blackjack is so popular.
+                    </p>
+                    <h2 class="scenarioTitle">Strategy</h2>
+                    <p>Let's say the house currently has a queen of hearts and you are dealt the 6 of spades and the 7 of clubs leaving you with a total of 13. To calculate the percentage that you are going to bust, you have to calculate how many cards are over 8 in a single deck, then subtract that total by the amount of cards that are over 8 that are currently in play. In our scenario there are 23 cards that are over 8 and there is still 49 cards left in the pile, leaving us with a 47% chance of going over 21. </p>
+                    <br>
+                    <p>Now let's calculate the chance of the dealer winning off of one hit. There are still 31 cards remaining that are between 7-11 and if we divide that by the 49 cards remaining will give us a 63.2% chance of the dealer winning in one hit.</p>
+                    <p>You can use this strategy to calculate if it will be better off to hit on stand on this particular turn.</p>
+                    <h2 class="scenarioTitle">Scearnios</h2> 
+                    <div class="scenarios">
+                        <div class="scenarioCard">
+                            <img src="imgs/12_v_4.png" alt="12vs4">
+                            <h3>12 vs Dealer 4</h3>
+                            <p>This is one of the closest hands in blackjack when it comes to odds. And, honestly, it’s not a good position to be in.
+
+                                When the dealer’s upcard is a 4, there’s a 40% chance they will bust. That means you’re going to lose the hand 60% of the time if you stand.
+                                
+                                If you choose to hit, your odds are slightly better, with a 58% chance of losing and a 2% chance of a push. Despite the slight advantage, our advice here is to stand and wait for the dealer to bust out.
+                            </p>
+                        </div>
+                        <div class="scenarioCard">
+                            <img src="imgs/10_vs_15.png" alt="12vs4">
+                            <h3>15 vs Dealer 10</h3>
+                            <p>This is one of the least favorable hands in all of blackjack. Whatever you do, the dealer has a much higher chance of winning.
+
+                                Hitting will give you a 22% chance of victory. Choosing to stand, meanwhile, will give you the slightest of edges - a 23% chance of winning. You might as well take a risk and hit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blackjack">
+                        <div class="houseCards">
+        
+                        </div>
+                        <div class="playerCards">
+                            
+                        </div>
+                        <div class="scores">
+                            <div>
+                                <h2>House Score:</h2>
+                                <h3 id = "houseScore"></h3>
+                            </div>
+                            <div>
+                                <h2>Player Score:</h2>
+                                <h3 id = "playerScore"></h3>
+                            </div>
+                        </div>
+                        <div class="blackjackButtons">
+                            <button onclick="hit()" class="hitButton" id="hit">HIT</button>
+                            <button onclick="stand()" class="standButton" id="stand">STAND</button>
+                            <button onclick="start()" class="restartButton" id="restart">RESTART</button>
+                        </div>
+                        <h3 id="condition"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/script_prob.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>

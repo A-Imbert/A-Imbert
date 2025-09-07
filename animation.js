@@ -6,7 +6,9 @@ canvas.height = window.innerHeight;
 let isWeb = false;
 const webButton = document.getElementById("web-button");
 const cButton = document.getElementById("c-button");
-const projectTitle = document.querySelector(".project-title");
+const projectTitle = document.querySelector(".project-title-main");
+const webProjects = document.querySelectorAll(".web-project");
+const cProjects = document.querySelectorAll(".c-project");
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach(entry =>{
         if(entry.isIntersecting){
@@ -193,6 +195,12 @@ function WebClicked(){
         cButton.classList.remove("pink");
         cButton.classList.add("gray");
     }
+    webProjects.forEach((project) =>{
+        project.classList.remove("hide-2");
+    })
+    cProjects.forEach((project) =>{
+        project.classList.add("hide-2");
+    })
 }
 function CPlusClicked(){
     if(cButton.classList.contains("pink")){
@@ -204,4 +212,10 @@ function CPlusClicked(){
         webButton.classList.remove("pink");
         webButton.classList.add("gray");
     }
+    cProjects.forEach((project) =>{
+        project.classList.remove("hide-2");
+    })
+    webProjects.forEach((project) =>{
+        project.classList.add("hide-2");
+    })
 }
